@@ -100,7 +100,7 @@ These are all of the routes that we can navigate to!
 
 # Meta
 
-Your Name – [@ClaireRehfuss](https://twitter.com/ClaireRehfuss) – ClaireRehfuss@gmail.com
+Made by: Claire Rehfuss – [@ClaireRehfuss](https://twitter.com/ClaireRehfuss) – ClaireRehfuss@gmail.com
 
 
 [https://github.com/crehfuss](https://github.com/crehfuss/)
