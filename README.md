@@ -62,29 +62,40 @@ _app.route_ is how we specify what should be at different URL endings. Notice if
 
 # So what's in our files?
 
-In app.py we have definitions for:
+**In app.py we have definitions for:**
 
 * @app.route('/')
 * @app.route('/hello')
 * @app.route('/hello/<name>')
+
    Note that these two route are listed about the same indented code!  
    See what happens when you go to http://127.0.0.1:5000/hello/Claire
+
 * @app.route('/facePhoto')
+
    This has most of the logic behind call the Microsoft Face API
+
 * @app.route('/itemPhoto')
+
    This method is empty **For Now**! This is what you'll be filling out as a challenge!
 
 These are all of the routes that we can navigate to!
 
 
-In the templates folder we have:
+** In the templates folder we have: **
 
-* hello.html
+* hello.html 
+
    A basic html file that is generated when /hello is on the url. It checks if there is a name on the end or not and returns different pages depending!
+
 * photo.html
+
    This is the html that's returned from facePhoto
+
 * itemphoto.html
+
    This is mostly empty and you'll fill it out as a challenge. It should be rendered from itemPhoto
+   
 
 
 # Meta
