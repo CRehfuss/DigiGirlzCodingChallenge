@@ -82,7 +82,7 @@ _app.route_ is how we specify what should be at different URL endings. Notice if
 These are all of the routes that we can navigate to!
 
 
-** In the templates folder we have: **
+**In the templates folder we have:**
 
 * hello.html 
 
@@ -95,7 +95,7 @@ These are all of the routes that we can navigate to!
 * itemphoto.html
 
    This is mostly empty and you'll fill it out as a challenge. It should be rendered from itemPhoto
-   
+
 
 
 # Meta
