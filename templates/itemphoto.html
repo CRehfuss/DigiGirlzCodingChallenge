@@ -1,0 +1,16 @@
+<!doctype html>
+
+
+<!-- Shows the image that was passed in from app.py render_template -->
+<!-- TODO: Print out the image  -->
+<img src={{ img_url }} alt = "Photo" width = "50%" height = "auto">
+
+<!-- TODO: Print out the caption of the image -->
+{% if imageResponse %}
+    <p><b>Caption: </b> </p>
+    {% for item in imageResponse.description.captions %}
+        {{item.text}}
+    {% endfor %}
+{% else %}
+  <h1>I don't see a photo</h1>
+{% endif %}

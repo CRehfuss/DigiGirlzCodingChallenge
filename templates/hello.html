@@ -1,0 +1,15 @@
+<!-- This html file checks tosee if someone puts a name in the URL after /hello/.
+  It is getting called from app.py on line 20.
+  If there is a name it prints out Hello <NAME>
+  If there is not it prints out a standard phrase
+ -->
+<!doctype html>
+<!-- Try to see where this title is being generated -->
+<title>Hello!!</title>
+
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+  <h2>Try putting a word after /hello/ in the URL</h2> 
+{% endif %}

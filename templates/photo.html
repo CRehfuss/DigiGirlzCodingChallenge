@@ -1,0 +1,26 @@
+<!-- This html generates the actual webpage for the /facephoto url route -->
+<!doctype html>
+
+<title>Face Detection</title>
+
+<!-- Shows the image that was passed in from app.py render_template -->
+<!-- img_url is a variable that is set and passed to this file via the render_template call in app.py -->
+<img src={{ img_url }} alt = "A Photo" width = "50%" height = "auto">
+
+<!-- Here is an example of how you can change font size and the color of the text. -->
+<!-- numfaces is a variable that is set and passed from the app.py -->
+<p><font size=5>Detected <font color='blue'>{{ numfaces }}</font> faces in the image</font></p>
+
+<!-- Loops through all of the faces that were found in app.py. This demonstrates how to access certain features. -->
+{% if facelist %}
+    {% for face in facelist %}
+      <p> <b> Person {{ loop.index }} identifying features </b> </p>
+      <!-- The below is commented out, but if uncommented it will print out all the features -->
+        <!-- <li> <b>All the Features:</b> {{face}} </li> -->
+          <li> <b>Gender:</b> {{ face.gender }}</li>
+          <li> <b>Hair Color Probabilities:</b> {{ face.hair.hairColor }}</li>
+    {% endfor %}
+{% else %}
+  <h1>I don't see a photo with faces</h1>
+{% endif %}
+
