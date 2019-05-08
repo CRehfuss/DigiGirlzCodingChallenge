@@ -24,7 +24,7 @@ def hello(name=None):
 @app.route('/facePhoto')
 def facephoto():
     # The subscription key and face_api_url allow us to connect to the service that holds the face recognition API
-    subscription_key = 'd3f1f41975284c6995d42cfc27d8aa3e'
+    subscription_key = '<TO FILL OUT>'
 
     face_api_url = 'https://westus.api.cognitive.microsoft.com/face/v1.0/detect'
 
@@ -75,19 +75,19 @@ def facephoto():
 # Play with a Computer Vision demo here: https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
 @app.route('/itemPhoto')
 def itemphoto():
-    subscription_key = '465614650ec845e0a66685a027a3f399'
+    subscription_key = '<TO FILL OUT>'
 
     face_api_url = 'https://eastus.api.cognitive.microsoft.com//vision/v2.0/analyze'
 
     # TODO: Add an image URL
-    image_url = 
+    image_url = None
 
     # TODO: Fill out the headers, params, and data
     # HINT: Only one of them need to be different than the Face API
     # HINT: Look at this page https://westcentralus.dev.cognitive.microsoft.com/docs/services/5adf991815e1060e6355ad44/operations/56f91f2e778daf14a499e1fa
-    headers = 
-    params  = 
-    data    = 
+    headers = None
+    params  = None
+    data    = None
     
     response = requests.post(face_api_url, headers=headers, params=params, json=data)
 
