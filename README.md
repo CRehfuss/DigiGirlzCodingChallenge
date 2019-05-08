@@ -124,20 +124,21 @@ Ok now to get to what you should try to do!
 ## Beginner
 1. Go to all the routes that are in the app.py file! There should be 5 different URL's you go to!
 
-1. Change what is printed when you go to http://127.0.0.1:5000/
+2. Change what is printed when you go to http://127.0.0.1:5000/
 
-2. Change the image that is being detected!
+3. Change the image that is being detected! For /facePhoto.
 
-3. Try to make the /photo page to say "I don't see a photo with faces"
+4. Try to make the /photo page to say "I don't see a photo with faces"
 
-4. Print out the age of the people in the images
+5. Add code in photo.html to print out the age of the people in the images
 
-5. Print out some other description of the people!
+6. Print out another FaceList characteristic description of the people in the images
 
-6. Change Photo.html so that IF there is only one person you print out "There is only 1 face! Make some friends."
+7. Change photo.html so that if they are smiling, ie. the smile attribute in facelist is more than .5 write "They are smiling!" if they aren't smiling write "They are not smiling!" 
+    Hint: Check out how to do if, elses in 
 
 ## Reach challenge!
-7. Implement @app.route('/itemPhoto') and itemphoto.html
+8. Implement @app.route('/itemPhoto') and itemphoto.html
 
 
 # Meta
