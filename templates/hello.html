@@ -7,6 +7,9 @@
 <!-- Try to see where this title is being generated -->
 <title>Hello!!</title>
 
+<!-- The below checks to see if someone puts a name in the URL after /hello/.
+If there is it prints out Hello <NAME>
+If there is not it prints out a standard phrase -->
 {% if name %}
   <h1> <font color='green'>Hello {{ name }}!</font></h1>
 {% else %}
