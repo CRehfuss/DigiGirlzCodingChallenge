@@ -128,9 +128,9 @@ Ok now to get to what you should try to do!
 
 3. Change the font of the hello message at http://127.0.0.1:5000//hello to blue.
 
-3. Change the image that is being detected! For /facePhoto.
+3. Change the image that is being detected for /facePhoto.
 
-4. Try to make the /photo page to say "I don't see a photo with faces"
+4. Try to make the /facePhoto page to say "I don't see a photo with faces"
 
 5. Add code in photo.html to print out the age of the people in the images
 
