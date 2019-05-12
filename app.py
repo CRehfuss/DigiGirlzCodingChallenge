@@ -77,7 +77,7 @@ def facephoto():
 def itemphoto():
     subscription_key = '<TO FILL OUT>'
 
-    face_api_url = 'https://eastus.api.cognitive.microsoft.com//vision/v2.0/analyze'
+    item_api_url = 'https://eastus.api.cognitive.microsoft.com//vision/v2.0/analyze'
 
     # TODO: Add an image URL
     image_url = None
@@ -89,7 +89,7 @@ def itemphoto():
     params  = None
     data    = None
     
-    response = requests.post(face_api_url, headers=headers, params=params, json=data)
+    response = requests.post(item_api_url, headers=headers, params=params, json=data)
 
     imageResponse = response.json()
 
