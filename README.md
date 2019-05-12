@@ -137,7 +137,7 @@ Ok now to get to what you should try to do!
 6. Print out another FaceList characteristic description of the people in the images
 
 7. Change photo.html so that if they are smiling, ie. the smile attribute in facelist is more than .5 write "They are smiling!" if they aren't smiling write "They are not smiling!" 
-    Hint: Check out how to do if, elses in 
+    Hint: Check out how to do if, elses in the hello.html
 
 ## Reach challenge!
 8. Implement @app.route('/itemPhoto') and itemphoto.html
