@@ -24,7 +24,7 @@ def hello(name=None):
 @app.route('/facePhoto')
 def facephoto():
     # The subscription key and face_api_url allow us to connect to the service that holds the face recognition API
-    subscription_key = '<TO FILL OUT>'
+    subscription_key = <INSERT KEY>
 
     face_api_url = 'https://westus.api.cognitive.microsoft.com/face/v1.0/detect'
 

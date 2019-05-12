@@ -18,7 +18,7 @@
       <!-- The below is commented out, but if uncommented it will print out all the features -->
         <!-- <li> <b>All the Features:</b> {{face}} </li> -->
           <li> <b>Gender:</b> {{ face.gender }}</li>
-          <li> <b>Hair Color Probabilities:</b> {{ face.hair.hairColor }}</li>
+          <li> They have <b>{{ face.hair.hairColor[0].color }}</b> color hair and I'm <b>{{face.hair.hairColor[0].confidence}}</b> confident</li>
     {% endfor %}
 {% else %}
   <h1>I don't see a photo with faces</h1>
