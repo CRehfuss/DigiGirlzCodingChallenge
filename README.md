@@ -34,6 +34,19 @@ Navigate to the DigiGirlzCodingChallenge folder:
 cd DigiGirlzCodingChallenge
 ```
 
+Ensure that you have pip and python installed by running
+```sh
+python -m pip --version
+```
+If you get an error about python go download python [here](https://www.python.org/downloads/)
+
+If you get an error about pip you need to ensure that you have pip installed. To install pip run
+```sh
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+sudo python get-pip.py
+```
+
 Download flask via the command prompt:
 ```sh
 pip install Flask
@@ -45,6 +58,14 @@ python -m pip install Flask
 
 _Hopefully_ that ran without any issues!!
 
+Then download requests:
+```sh
+pip install requests
+```
+or 
+```sh
+python -m pip install requests
+```
 
 To run the application, make sure you're in the DigiGirlzCodingChallenge folder and run:
 ```sh
