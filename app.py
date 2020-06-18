@@ -10,7 +10,7 @@ app = Flask(__name__)
 # This is what is output when you go to http://127.0.0.1:5000/ After it's running. 
 @app.route('/')
 def test():
-    return "Welcome to DigiGirlz!"
+    return "Hello This is a website!!"
 
 #This is what will output when you go to <your url>/hello or <YOUR URL>/hello/<A NAME>
 # Render template returns what's in the templates/hello.html
@@ -18,9 +18,9 @@ def test():
 @app.route('/hello/<name>')
 def hello(name=None):
     return render_template('hello.html', name =name)
-
-# This method makes an API call to Microsoft's Face Detection API
-# Read more about this Machine Learning API and play with a demo here: https://azure.microsoft.com/en-us/services/cognitive-services/face/
+'''
+#This method makes an API call to Microsoft's Face Detection API
+#Read more about this Machine Learning API and play with a demo here: https://azure.microsoft.com/en-us/services/cognitive-services/face/
 @app.route('/facePhoto')
 def facephoto():
     # The subscription key and face_api_url allow us to connect to the service that holds the face recognition API
@@ -71,8 +71,8 @@ def facephoto():
     return render_template('photo.html', img_url = image_url, numfaces = len(facelist), facelist = facelist)
 
 
-# TODO: Fill out this method and make a call to the Microsoft Computer Vision API.
-# Play with a Computer Vision demo here: https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
+TODO: Fill out this method and make a call to the Microsoft Computer Vision API.
+Play with a Computer Vision demo here: https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
 @app.route('/itemPhoto')
 def itemphoto():
     subscription_key = '<TO FILL OUT>'
@@ -102,6 +102,6 @@ def itemphoto():
     # uncomment out the below line when you get to the last challenge  
     # return render_template('itemphoto.html', img_url = image_url,  imageResponse = imageResponse)
 
-
+'''
 if __name__ == '__main__':
     app.run(debug=True)
